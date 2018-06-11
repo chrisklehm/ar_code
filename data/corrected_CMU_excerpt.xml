@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<entry>
+		<index>1</index>
+		<word>a</word>
+		<repair_spelling></repair_spelling>
+		<variant_index>1</variant_index>
+		<original_CMU>AH0</original_CMU>
+		<auto-repair>EY1</auto-repair>
+		<exclude>aa exclude - not independent form</exclude>
+		<corrections_of_excluded></corrections_of_excluded>
+		<corrected_and_trimmed></corrected_and_trimmed>
+		<corrected_only>EY1</corrected_only>
+		<CELEX_freq>1267035</CELEX_freq>
+		<CELEX_freq_amoung_homographs>633518</CELEX_freq_amoung_homographs>
+		<length>6</length>
+	</entry>
+	<entry>
+		<index>2</index>
+		<word>a</word>
+		<repair_spelling></repair_spelling>
+		<variant_index>2</variant_index>
+		<original_CMU>EY1</original_CMU>
+		<auto-repair>EY1</auto-repair>
+		<exclude></exclude>
+		<corrections_of_excluded></corrections_of_excluded>
+		<corrected_and_trimmed>EY1</corrected_and_trimmed>
+		<corrected_only>EY1</corrected_only>
+		<CELEX_freq>1267035</CELEX_freq>
+		<CELEX_freq_amoung_homographs>633518</CELEX_freq_amoung_homographs>
+		<length>9</length>
+	</entry>
+</root>

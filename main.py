@@ -1,18 +1,18 @@
 import os
 from xml.etree import ElementTree
-import arpa
+import sounds
 
 
 
 def main():
 
-    converter = arpa.ARPAtoIPA()
+    inventory = sounds.Inventory()
+    lex = sounds.Lexicon()
 
-    file_name = 'corrected_CMU.xml'     # name of data file
-    full_path = os.path.abspath(os.path.join("data", file_name))     # get full path of data file todo: learn exactly what this does
-    dom = ElementTree.parse(full_path)      # parse the XML data
-    entries = dom.findall('entry')      # extract all the data entries
-    for e in entries:       # print every entry's word value
-        print(converter.getIPA(e.find('corrected_only').text))
+    ways_to_say_sharpshooter = lex.getTranscription('read')
+    print('You can say "read" in the following ways:')
+    for w in ways_to_say_sharpshooter:
+        print(w.sounds)
+
 
 main()

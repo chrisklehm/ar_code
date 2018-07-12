@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sound>
+		<feature name="symbol">i</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɪ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">y</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ʏ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">e</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɛ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ø</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">œ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">æ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">1</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɶ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">1</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɨ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ʉ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɵ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ə</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">a</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">1</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">u</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɯ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ʊ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">o</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɤ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɔ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ʌ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɑ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">1</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ɒ</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">1</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">j</feature>
+		<feature name="syll">0</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">1</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">w</feature>
+		<feature name="syll">0</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">1</feature>
+		<feature name="low">0</feature>
+		<feature name="back">1</feature>
+		<feature name="front">0</feature>
+		<feature name="round">1</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">ʔ</feature>
+		<feature name="syll">0</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">h</feature>
+		<feature name="syll">0</feature>
+		<feature name="cons">0</feature>
+		<feature name="son">1</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="back">0</feature>
+		<feature name="front">0</feature>
+		<feature name="round">0</feature>
+		<feature name="atr">0</feature>
+		<feature name="contin">1</feature>
+		<feature name="voice">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+	</sound>
+</root>

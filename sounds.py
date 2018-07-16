@@ -1,14 +1,27 @@
 import io, re, os
 from xml.etree import ElementTree
 
+def soundSeq(sound_seq):
+    sound_str = ''
+    for s in sound_seq:
+        sound_str += str(s)
+    return sound_str
+
 class Sound(object):
     def __init__(self, feat):
         self.features = {}
         for f in feat:
-            self.features[f.attrib['name']] = f.text
+            f_name = f.attrib['name']
+            if (f_name == 'symbol'):
+                self.features[f_name] = f.text
+            else:
+                self.features[f_name] = int(f.text)
 
     def __str__(self):
         return self.features['symbol']
+
+    def isVowel(self):
+        return self.features['cons'] == 0
 
     def dist(self, b):
         sum = 0
@@ -41,8 +54,12 @@ class Inventory(object):
                     else:
                         vowel_features.add(k)
 
+    def getSound(self, sym):
+        for s in self.sounds:
+            if s.features['symbol'] == sym:
+                return s
 
-    def getSounds(self, property, value):
+    def getSoundsSuchThat(self, property, value):
         return_sounds = set()
         for s in self.sounds:
             if (property not in s.features.keys()):
@@ -51,11 +68,12 @@ class Inventory(object):
                 return_sounds.add(s)
         return return_sounds
 
+
 class ARPAtoIPA(object):
     def __init__(self):
         self.arpa_to_ipa = {}
         self.arpa_to_ipa[" "] = ['space', ' ']
-        self.types = set(['vowel', 'cons', 'space'])
+        self.types = set(['vowel', 'cons', 'space','diph'])
         with io.open('data/arpa_to_ipa.txt', 'r', encoding='utf8') as infile:
             for line in infile:
                 line = line.strip()
@@ -66,8 +84,11 @@ class ARPAtoIPA(object):
                     self.arpa_to_ipa[line_list[1]] = [line_list[0],line_list[2]]
         infile.close()
 
+    def getARPASansStress(self, arpa):
+        return re.sub('\d', '', arpa)
+
     def getIPA(self, arpa: str):
-        arpa_sans_stress = re.sub('\d', '', arpa)
+        arpa_sans_stress = self.getARPASansStress(arpa)
         arpa_list = arpa_sans_stress.split()
         ipa = ''
         for i in arpa_list:
@@ -97,6 +118,47 @@ class Phon_Word(object):
         self.spelling = spelling
         self.sounds = sounds
 
+    def __str__(self):
+        ipa_str = ''
+        for s in self.sounds:
+            ipa_str += str(s)
+        return ipa_str
+
+    def getVowels(self):
+        vowels = []
+        for s in self.sounds:
+            if s.isVowel():
+                vowels.append(s)
+        return tuple(vowels)
+
+    def getCons(self):
+        cons = []
+        for s in self.sounds:
+            if not s.isVowel():
+                cons.append(s)
+        return tuple(cons)
+
+    def getClusters(self):
+        clust_list = []
+        current_cluster = []
+        idx = 0
+        current_isVow = self.sounds[idx].isVowel()
+        previous_isVow = self.sounds[idx].isVowel()
+        while (True):
+            if (current_isVow == previous_isVow):
+                current_cluster.append(self.sounds[idx])
+                idx += 1
+            else:
+                clust_list.append(tuple(current_cluster))
+                current_cluster = [self.sounds[idx]]
+                idx += 1
+            if (idx == len(self.sounds)):
+                clust_list.append(tuple(current_cluster))
+                break
+            else:
+                previous_isVow = current_isVow
+                current_isVow = self.sounds[idx].isVowel()
+        return tuple(clust_list)
 
 class Lexicon(object):
     def __init__(self):
@@ -105,20 +167,34 @@ class Lexicon(object):
         dom = ElementTree.parse(full_path)  # parse the XML data
         entries = dom.findall('entry')  # extract all the data entries
         phonetic_words = {}
-        converter = ARPAtoIPA()
+        self.converter = ARPAtoIPA()
+        self.inventory = Inventory()
         for e in entries:
             arpa_list = e.find('corrected_only').text.split()
-            ipa_list = []
+            sound_list = []
             for c in arpa_list:
-                ipa_list.append(converter.getIPA(c))
-            sounds = tuple(ipa_list)
+                ipa_c = self.converter.getIPA(c)
+                if (self.converter.arpa_to_ipa[self.converter.getARPASansStress(c)][0] == 'diph'):
+                    new_sound1 = self.inventory.getSound(ipa_c[0])
+                    new_sound2 = self.inventory.getSound(ipa_c[1])
+                    sound_list.append(new_sound1)
+                    sound_list.append(new_sound2)
+                else:
+                    new_sound = self.inventory.getSound(ipa_c)
+                    sound_list.append(new_sound)
+                    if (new_sound == None):
+                        print(arpa_list)
+            sounds = tuple(sound_list)
+            print(soundSeq(sounds))
             new_word = Phon_Word(e.find('word').text, sounds)
+            print(new_word.spelling + '\n')
             phonetic_words[int(e.find('index').text)] = new_word
         self.p_words = phonetic_words
 
-    def getTranscription(self, find_str):
-        found_trans = []
+    def getWord(self, find_str):
+        found_words = []
         for w in self.p_words.values():
             if w.spelling == find_str:
-                found_trans.append(w)
-        return found_trans
+                found_words.append(w)
+        return found_words
+

@@ -361,7 +361,7 @@
 		<feature name="tap">0</feature>
 	</sound>
 	<sound>
-		<feature name="symbol">g</feature>
+		<feature name="symbol">ɡ</feature>
 		<feature name="syll">0</feature>
 		<feature name="cons">1</feature>
 		<feature name="son">0</feature>
@@ -1151,8 +1151,54 @@
 		<feature name="tap">0</feature>
 	</sound>
 	<sound>
+		<feature name="symbol">m̩</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">1</feature>
+		<feature name="son">1</feature>
+		<feature name="contin">0</feature>
+		<feature name="del_rel">0</feature>
+		<feature name="lateral">0</feature>
+		<feature name="nasal">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+		<feature name="ant">0</feature>
+		<feature name="cor">0</feature>
+		<feature name="dist">0</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="front">0</feature>
+		<feature name="back">0</feature>
+		<feature name="round">0</feature>
+		<feature name="labial">1</feature>
+		<feature name="trill">0</feature>
+		<feature name="tap">0</feature>
+	</sound>
+	<sound>
 		<feature name="symbol">n</feature>
 		<feature name="syll">0</feature>
+		<feature name="cons">1</feature>
+		<feature name="son">1</feature>
+		<feature name="contin">0</feature>
+		<feature name="del_rel">0</feature>
+		<feature name="lateral">0</feature>
+		<feature name="nasal">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+		<feature name="ant">0</feature>
+		<feature name="cor">1</feature>
+		<feature name="dist">0</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="front">0</feature>
+		<feature name="back">0</feature>
+		<feature name="round">0</feature>
+		<feature name="labial">0</feature>
+		<feature name="trill">0</feature>
+		<feature name="tap">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">n̩</feature>
+		<feature name="syll">1</feature>
 		<feature name="cons">1</feature>
 		<feature name="son">1</feature>
 		<feature name="contin">0</feature>
@@ -1266,6 +1312,29 @@
 		<feature name="tap">0</feature>
 	</sound>
 	<sound>
+		<feature name="symbol">ɹ̩̩</feature>
+		<feature name="syll">1</feature>
+		<feature name="cons">1</feature>
+		<feature name="son">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="del_rel">0</feature>
+		<feature name="lateral">0</feature>
+		<feature name="nasal">0</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+		<feature name="ant">1</feature>
+		<feature name="cor">1</feature>
+		<feature name="dist">0</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="front">0</feature>
+		<feature name="back">0</feature>
+		<feature name="round">0</feature>
+		<feature name="labial">0</feature>
+		<feature name="trill">0</feature>
+		<feature name="tap">0</feature>
+	</sound>
+	<sound>
 		<feature name="symbol">ɻ</feature>
 		<feature name="syll">0</feature>
 		<feature name="cons">1</feature>
@@ -1312,6 +1381,29 @@
 		<feature name="tap">1</feature>
 	</sound>
 	<sound>
+		<feature name="symbol">ɾ̃</feature>
+		<feature name="syll">0</feature>
+		<feature name="cons">1</feature>
+		<feature name="son">1</feature>
+		<feature name="contin">0</feature>
+		<feature name="del_rel">0</feature>
+		<feature name="lateral">0</feature>
+		<feature name="nasal">1</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+		<feature name="ant">1</feature>
+		<feature name="cor">1</feature>
+		<feature name="dist">0</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="front">0</feature>
+		<feature name="back">0</feature>
+		<feature name="round">0</feature>
+		<feature name="labial">0</feature>
+		<feature name="trill">0</feature>
+		<feature name="tap">1</feature>
+	</sound>
+	<sound>
 		<feature name="symbol">r</feature>
 		<feature name="syll">0</feature>
 		<feature name="cons">1</feature>
@@ -1337,6 +1429,29 @@
 	<sound>
 		<feature name="symbol">l</feature>
 		<feature name="syll">0</feature>
+		<feature name="cons">1</feature>
+		<feature name="son">1</feature>
+		<feature name="contin">1</feature>
+		<feature name="del_rel">0</feature>
+		<feature name="lateral">1</feature>
+		<feature name="nasal">0</feature>
+		<feature name="cg">0</feature>
+		<feature name="sg">0</feature>
+		<feature name="ant">1</feature>
+		<feature name="cor">1</feature>
+		<feature name="dist">0</feature>
+		<feature name="high">0</feature>
+		<feature name="low">0</feature>
+		<feature name="front">0</feature>
+		<feature name="back">0</feature>
+		<feature name="round">0</feature>
+		<feature name="labial">0</feature>
+		<feature name="trill">0</feature>
+		<feature name="tap">0</feature>
+	</sound>
+	<sound>
+		<feature name="symbol">l̩</feature>
+		<feature name="syll">1</feature>
 		<feature name="cons">1</feature>
 		<feature name="son">1</feature>
 		<feature name="contin">1</feature>

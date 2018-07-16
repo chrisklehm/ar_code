@@ -2,17 +2,21 @@ import os
 from xml.etree import ElementTree
 import sounds
 
-
+def soundSeq(sound_seq):
+    sound_str = ''
+    for s in sound_seq:
+        sound_str += str(s)
+    return sound_str
 
 def main():
 
-    inventory = sounds.Inventory()
+
     lex = sounds.Lexicon()
 
-    ways_to_say_sharpshooter = lex.getTranscription('read')
-    print('You can say "read" in the following ways:')
-    for w in ways_to_say_sharpshooter:
-        print(w.sounds)
+    ways_to_say_this = lex.getWord('brandy')
+    for w in ways_to_say_this:
+        print(soundSeq(w.sounds))
+
 
 
 main()

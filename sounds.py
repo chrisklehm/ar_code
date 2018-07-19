@@ -172,6 +172,12 @@ class Lexicon(object):
         for e in entries:
             arpa_list = e.find('corrected_only').text.split()
             sound_list = []
+            pol = 0
+            for s in arpa_list:
+                if ('ER' in s):
+                    pol = 1
+            if (pol == 1):
+                continue
             for c in arpa_list:
                 ipa_c = self.converter.getIPA(c)
                 if (self.converter.arpa_to_ipa[self.converter.getARPASansStress(c)][0] == 'diph'):
@@ -182,12 +188,8 @@ class Lexicon(object):
                 else:
                     new_sound = self.inventory.getSound(ipa_c)
                     sound_list.append(new_sound)
-                    if (new_sound == None):
-                        print(arpa_list)
             sounds = tuple(sound_list)
-            print(soundSeq(sounds))
             new_word = Phon_Word(e.find('word').text, sounds)
-            print(new_word.spelling + '\n')
             phonetic_words[int(e.find('index').text)] = new_word
         self.p_words = phonetic_words
 
@@ -197,4 +199,12 @@ class Lexicon(object):
             if w.spelling == find_str:
                 found_words.append(w)
         return found_words
+
+    def inWord(self, wd, snd):
+        in_word = False
+        sound = self.inventory.getSound(snd)
+        for s in wd.sounds:
+            if (sound == s):
+                in_word = True
+        return in_word
 

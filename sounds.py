@@ -28,6 +28,8 @@ class Sound(object):
         for k in self.features.keys():
             if (k == 'symbol'):
                 pass
+            elif (k not in b.features.keys()):
+                pass
             else:
                 sum += (int(self.features[k]) - int(b.features[k])) ^ 2
         return sum ** (0.5)

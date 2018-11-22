@@ -1,6 +1,4 @@
-import os
-from xml.etree import ElementTree
-import sounds
+import lexicon
 
 def soundSeq(sound_seq):
     sound_str = ''
@@ -10,15 +8,12 @@ def soundSeq(sound_seq):
 
 def main():
 
+    lex = lexicon.Lexicon()
+    for w in lex.word_set:
+        if lex.inWord(w, "M"):
+            print(w)
 
-    lex = sounds.Lexicon()
 
-
-
-
-    print('P(z|o) = ', prob_of_z_given_o)
-    print('The average euclidean distance between the first and last sounds of words with at least two sounds long is',
-          avg_euclidean_dist_between_first__and_last_letter)
 
 
 

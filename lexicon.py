@@ -1,4 +1,4 @@
-import io, re, os, inventory
+import re, os, inventory
 from xml.etree import ElementTree
 
 class Phon_Word(object):
@@ -11,6 +11,17 @@ class Phon_Word(object):
         for s in self.sounds:
             new_str += s.symbol
         return new_str
+
+    def isCVCVCV (self):
+        if not self.sounds[0].cons:     # make sure the first sound is a consonant
+            return False
+        if self.sounds[-1].cons:    # make sure the last sound isn't a consonant
+            return False
+        for i in range(1, len(self.sounds)):    # make sure the vowels and consonants alternate
+            if self.sounds[i].cons == self.sounds[i-1].cons:
+                return False
+        return True
+
 
 class Lexicon(object):
     def __init__(self):

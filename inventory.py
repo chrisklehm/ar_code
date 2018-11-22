@@ -2,9 +2,10 @@ import io
 
 # sound object with id (ARPA string) and symbol (IPA string)
 class Sound (object):
-    def __init__(self, arpa, symbol):
+    def __init__(self, arpa, symbol, cons):
         self.arpa = arpa
         self.symbol = symbol
+        self.cons = cons
 
     def __str__(self):
         return self.symbol
@@ -16,7 +17,10 @@ class Inventory (object):
             for sound in sound_file:
                 sound = sound.strip()
                 sound = sound.split()
-                new_sound = Sound(sound[1], sound[2])
+                is_cons = True
+                if sound[0] == "vowel":     # check whether the sound is a consonant
+                    is_cons = False
+                new_sound = Sound(sound[1], sound[2], is_cons)  # create new sound with arpa, ipa, and consonant values
                 self.sound_set.add(new_sound)
         sound_file.close()
 

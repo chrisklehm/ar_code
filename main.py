@@ -9,11 +9,16 @@ def soundSeq(sound_seq):
 def main():
 
     lex = lexicon.Lexicon()
+
+    # find CVCVCV words
+    cv_words = set()
     for w in lex.word_set:
-        if lex.inWord(w, "M"):
-            print(w)
+        if len(w.sounds) < 6:
+            pass
+        elif w.isCVCVCV():
+            cv_words.add(w)
 
-
+    
 
 
 

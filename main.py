@@ -42,10 +42,15 @@ def main():
             if w.sounds[3] == w.sounds[5]:    # check if the second two vowels are the same
                 identV23.add(w)
 
-    a = identC12 & identV12
-    b = identC12 - a
-    q = (cv_words - identC12) - identV12
-    print(len(q))
+    a = identC23 & identV23                 # resulting words with matching consonants and vowels
+    b = identC23 - a                        # resulting words with matching consonants but not vowels
+    c = identV23 - a                        # resulting words with matching vowels but not consonants
+    q = (cv_words - identC23) - identV23    # resulting words that neither math consonants nor vowels
+    print("total number of words: ", len(cv_words))
+    print("resulting words with matching consonants and vowels: ",len(a))
+    print("resulting words with matching consonants but not vowels: ", len(b))
+    print("resulting words with matching vowels but not consonants: ", len(c))
+    print("resulting words that neither math consonants nor vowels: ", len(q))
     #c = identC23 & identV23
     #d = identC23 - c
 

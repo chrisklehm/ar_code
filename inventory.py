@@ -3,9 +3,9 @@ import io
 # sound object with id (ARPA string) and symbol (IPA string)
 class Sound (object):
     def __init__(self, arpa, symbol, cons):
-        self.arpa = arpa
-        self.symbol = symbol
-        self.cons = cons
+        self.arpa = arpa        # unique arpabet designation of the sound
+        self.symbol = symbol    # non-unique ipa designation of the sound (used only for display)
+        self.cons = cons        # True if the sound is a consonant, False otherwise
 
     def __str__(self):
         return self.symbol
